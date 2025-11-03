@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="Layered Architecture" id="0">
+    <mxGraphModel dx="587" dy="773" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Input Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#039be5" parent="1" vertex="1">
+          <mxGeometry x="80" y="40" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Data Input&lt;div&gt;Collects Data&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e3f2fd" parent="2" vertex="1">
+          <mxGeometry x="31.578947368421055" y="20" width="189.47368421052633" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Parser&lt;div&gt;Reads Data&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e3f2fd" parent="2" vertex="1">
+          <mxGeometry x="380.00157894736844" y="20" width="189.47368421052633" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Validation Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f8e9;strokeColor=#8bc34a" parent="1" vertex="1">
+          <mxGeometry x="80" y="140" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Field Check&lt;div&gt;Checks Required Fields&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dcedc8" parent="3" vertex="1">
+          <mxGeometry x="31.58" y="20" width="168.42" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Data Type Validator&lt;div&gt;Validates Types&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dcedc8" parent="3" vertex="1">
+          <mxGeometry x="240" y="20" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Integrity Check&lt;div&gt;Ensures Completeness&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dcedc8" parent="3" vertex="1">
+          <mxGeometry x="440" y="20" width="149.48" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Processing Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#fbc02d" parent="1" vertex="1">
+          <mxGeometry x="80" y="240" width="600" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Subtotal Calculator" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe0b2" parent="4" vertex="1">
+          <mxGeometry x="31.58" y="10" width="128.42" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Tax Calculator" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe0b2" parent="4" vertex="1">
+          <mxGeometry x="120" y="50" width="138.95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Total Aggregator" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe0b2" parent="4" vertex="1">
+          <mxGeometry x="344.9963157894737" width="173.68421052631578" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Discount Handler" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe0b2" parent="4" vertex="1">
+          <mxGeometry x="426.3131578947369" y="50" width="173.68421052631578" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Output Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#e91e63" parent="1" vertex="1">
+          <mxGeometry x="80" y="360" width="600" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Display Formatter&lt;div&gt;Creates Results&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8bbd0" parent="5" vertex="1">
+          <mxGeometry x="31.584" y="10" width="136.416" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Invoice Printer&lt;div&gt;Prints Output&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8bbd0" parent="5" vertex="1">
+          <mxGeometry x="140" y="50" width="146.58" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="File Exporter&lt;div&gt;Saves Invoice&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8bbd0" parent="5" vertex="1">
+          <mxGeometry x="380" y="10" width="166" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="18" style="endArrow=block;endFill=1;html=1;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" style="endArrow=block;endFill=1;html=1;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" style="endArrow=block;endFill=1;html=1;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
